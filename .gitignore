@@ -1,0 +1,38 @@
+# ROS 2 / colcon build outputs
+build/
+install/
+log/
+.colcon/
+.colcon_install_layout
+compile_commands.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+myenv/
+**/myenv/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local workspace metadata
+.codex
+.claude/
+
+# Embedded external repository (keep separately versioned for now)
+src/pymoveit2/

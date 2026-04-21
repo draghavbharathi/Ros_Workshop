@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<robot name="table_model">
+
+  <link name="Table">
+
+    <inertial>
+      <origin xyz="0 0 0.1" rpy="0 0 0"/>
+      <mass value="14.949"/>
+      <inertia
+        ixx="0.12772"
+        ixy="3.9504E-18"
+        ixz="-1.1005E-17"
+        iyy="0.19016"
+        iyz="-1.1223E-18"
+        izz="0.1621"/>
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0.1" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.3 0.3 0.2"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0 0.93333 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0.1" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.3 0.3 0.2"/>
+      </geometry>
+    </collision>
+
+  </link>
+
+  <gazebo>
+    <static>true</static>
+  </gazebo>
+
+</robot>

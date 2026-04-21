@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<robot name="package_box">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="-1.570796327 0 0"/>
+      <mass value="1.0"/>
+      <inertia
+        ixx="0.00220983"
+        ixy="0"
+        ixz="0"
+        iyy="0.00128087"
+        iyz="0"
+        izz="0.00244903"/>
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 -0.12" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robotic_arm/textures/box/box.dae"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.16 0.22 0.24"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="base_link">
+    <self_collide>false</self_collide>
+    <gravity>true</gravity>
+    <kinematic>false</kinematic>
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <kp>1.0e13</kp>
+    <kd>1.0</kd>
+    <max_vel>0.01</max_vel>
+    <min_depth>0.0</min_depth>
+  </gazebo>
+</robot>

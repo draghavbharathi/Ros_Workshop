@@ -1,0 +1,106 @@
+[INFO] [launch]: All log files can be found below /home/raghav/.ros/log/2026-03-09-02-48-16-278760-Dell-G15-5530-22985
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gazebo-1]: process started with pid [22990]
+[INFO] [parameter_bridge-2]: process started with pid [22991]
+[INFO] [robot_state_publisher-3]: process started with pid [22992]
+[INFO] [robot_state_publisher-4]: process started with pid [22994]
+[robot_state_publisher-3] [INFO] [1773004696.619880551] [robot_state_publisher]: Robot initialized
+[robot_state_publisher-4] [WARN] [1773004696.620235554] [kdl_parser]: The root link camera_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-4] [INFO] [1773004696.620286318] [camera_state_publisher]: Robot initialized
+[parameter_bridge-2] [INFO] [1773004696.632215947] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1773004696.632668325] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/color/image_raw (gz.msgs.Image) -> /camera/color/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1773004696.633876960] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/color/camera_info (gz.msgs.CameraInfo) -> /camera/color/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1773004696.634153721] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/aligned_depth_to_color/image_raw (gz.msgs.Image) -> /camera/aligned_depth_to_color/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1773004696.634291016] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/infra1/image_raw (gz.msgs.Image) -> /camera/infra1/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1773004696.634431068] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/infra1/camera_info (gz.msgs.CameraInfo) -> /camera/infra1/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1773004696.634546873] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/infra2/image_raw (gz.msgs.Image) -> /camera/infra2/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1773004696.634655621] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/infra2/camera_info (gz.msgs.CameraInfo) -> /camera/infra2/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[INFO] [create-5]: process started with pid [23100]
+[create-5] [INFO] [1773004698.829092834] [ros_gz_sim]: Entity creation successful.
+[gazebo-1] Error:   Failed to build tree: parent link [Table] of joint [table_to_base] not found.  This is not valid according to the URDF spec. Every link you refer to from a joint needs to be explicitly defined in the robot description. To fix this problem you can either remove this joint [table_to_base] from your urdf file, or add "<link name="Table" />" to your urdf file.
+[gazebo-1]          at line 253 in ./urdf_parser/src/model.cpp
+[gazebo-1] [1;31mError [parser_urdf.cc:3348][0m Unable to call parseURDF on robot model
+[gazebo-1] [1;31m[Err] [UserCommands.cc:928] [0m[1;31mError Code [0m[1;31m40[0m[1;31m: [0m[1;31mMsg: [0m[1;31mFailed to parse the URDF file after converting to SDFormat.[0m[1;31m[0m
+[gazebo-1] [1;31m[Err] [UserCommands.cc:928] [0m[1;31mError Code [0m[1;31m1[0m[1;31m: [0m[1;31mMsg: [0m[1;31mUnable to read file: [/home/raghav/workshop_ws/install/Robotic_Arm/share/Robotic_Arm/urdf/Robotic_Arm.urdf][0m[1;31m[0m
+[INFO] [create-5]: process has finished cleanly [pid 23100]
+[INFO] [spawner-6]: process started with pid [23132]
+[INFO] [create-7]: process started with pid [23133]
+[INFO] [create-8]: process started with pid [23134]
+[INFO] [create-9]: process started with pid [23135]
+[INFO] [static_transform_publisher-10]: process started with pid [23136]
+[static_transform_publisher-10] [WARN] [1773004699.184986488] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-10] [INFO] [1773004699.194980896] [static_transform_publisher_x4Dreggo8mfzDo8U]: Spinning until stopped - publishing transform
+[static_transform_publisher-10] translation: ('-1.000000', '0.400000', '1.100000')
+[static_transform_publisher-10] rotation: ('0.000000', '0.247404', '0.000000', '0.968912')
+[static_transform_publisher-10] from 'world' to 'camera_link'
+[create-8] [INFO] [1773004699.400216249] [ros_gz_sim]: Entity creation successful.
+[create-7] [INFO] [1773004699.500428476] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-8]: process has finished cleanly [pid 23134]
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="package_box"]/link[@name="base_link"]/max_vel:/home/raghav/workshop_ws/install/Robotic_Arm/share/Robotic_Arm/urdf/package_box.urdf:L0]: XML Element[max_vel], child of element[link], not defined in SDF. Copying[max_vel] as children of [link].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="package_box"]/link[@name="base_link"]/min_depth:/home/raghav/workshop_ws/install/Robotic_Arm/share/Robotic_Arm/urdf/package_box.urdf:L0]: XML Element[min_depth], child of element[link], not defined in SDF. Copying[min_depth] as children of [link].
+[spawner-6] [INFO] [1773004699.537689241] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="camera_model"]/link[@name="camera_link"]/sensor[@name="cameradepth"]/gz_frame_id:/home/raghav/workshop_ws/install/Robotic_Arm/share/Robotic_Arm/urdf/camera.urdf:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="camera_model"]/link[@name="camera_link"]/sensor[@name="cameracolor"]/gz_frame_id:/home/raghav/workshop_ws/install/Robotic_Arm/share/Robotic_Arm/urdf/camera.urdf:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="camera_model"]/link[@name="camera_link"]/sensor[@name="cameraired1"]/gz_frame_id:/home/raghav/workshop_ws/install/Robotic_Arm/share/Robotic_Arm/urdf/camera.urdf:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="camera_model"]/link[@name="camera_link"]/sensor[@name="cameraired2"]/gz_frame_id:/home/raghav/workshop_ws/install/Robotic_Arm/share/Robotic_Arm/urdf/camera.urdf:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[create-9] [INFO] [1773004699.600545890] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-7]: process has finished cleanly [pid 23133]
+[gazebo-1] libEGL warning: pci id for fd 90: 10de:25ec, driver (null)
+[gazebo-1] 
+[gazebo-1] pci id for fd 91: 10de:25ec, driver (null)
+[gazebo-1] pci id for fd 92: 10de:25ec, driver (null)
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[gazebo-1] libEGL warning: pci id for fd 90: 10de:25ec, driver (null)
+[gazebo-1] 
+[gazebo-1] pci id for fd 91: 10de:25ec, driver (null)
+[gazebo-1] pci id for fd 92: 10de:25ec, driver (null)
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[gazebo-1] libEGL warning: pci id for fd 90: 10de:25ec, driver (null)
+[gazebo-1] 
+[INFO] [create-9]: process has finished cleanly [pid 23135]
+[gazebo-1] libEGL warning: pci id for fd 58: 10de:25ec, driver (null)
+[gazebo-1] 
+[gazebo-1] pci id for fd 59: 10de:25ec, driver (null)
+[gazebo-1] pci id for fd 60: 10de:25ec, driver (null)
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[gazebo-1] libEGL warning: pci id for fd 58: 10de:25ec, driver (null)
+[gazebo-1] 
+[gazebo-1] pci id for fd 59: 10de:25ec, driver (null)
+[gazebo-1] pci id for fd 60: 10de:25ec, driver (null)
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[gazebo-1] libEGL warning: pci id for fd 58: 10de:25ec, driver (null)
+[gazebo-1] 
+[spawner-6] [WARN] [1773004709.542910484] [spawner_joint_state_broadcaster]: Could not contact service /controller_manager/list_controllers
+[spawner-6] [INFO] [1773004709.543278989] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-6] [WARN] [1773004719.548449273] [spawner_joint_state_broadcaster]: Could not contact service /controller_manager/list_controllers
+[spawner-6] [INFO] [1773004719.548634747] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-6] [WARN] [1773004729.553852556] [spawner_joint_state_broadcaster]: Could not contact service /controller_manager/list_controllers
+[spawner-6] [INFO] [1773004729.554294002] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-6] [WARN] [1773004739.559321252] [spawner_joint_state_broadcaster]: Could not contact service /controller_manager/list_controllers
+[spawner-6] [INFO] [1773004739.559532418] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[robot_state_publisher-4] [INFO] [1773004743.923208613] [rclcpp]: signal_handler(signum=2)
+[parameter_bridge-2] [INFO] [1773004743.923216665] [rclcpp]: signal_handler(signum=2)
+[static_transform_publisher-10] [INFO] [1773004743.923219381] [rclcpp]: signal_handler(signum=2)
+[robot_state_publisher-3] [INFO] [1773004743.923226706] [rclcpp]: signal_handler(signum=2)
+[spawner-6] [INFO] [1773004743.924474258] [spawner_joint_state_broadcaster]: KeyboardInterrupt received! Exiting....
+[INFO] [parameter_bridge-2]: process has finished cleanly [pid 22991]
+[INFO] [static_transform_publisher-10]: process has finished cleanly [pid 23136]
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 22992]
+[INFO] [robot_state_publisher-4]: process has finished cleanly [pid 22994]
+[INFO] [spawner-6]: process has finished cleanly [pid 23132]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[gazebo-1] /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:201:in `kill': No such process (Errno::ESRCH)
+[gazebo-1] 	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:201:in `killProcess'
+[gazebo-1] 	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:569:in `handle_signal'
+[gazebo-1] 	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:574:in `block in execute'
+[gazebo-1] /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:201:in `kill': No such process (Errno::ESRCH)
+[gazebo-1] 	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:201:in `killProcess'
+[gazebo-1] 	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:569:in `handle_signal'
+[gazebo-1] 	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:574:in `block in execute'
+[gazebo-1] 	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:584:in `wait2'
+[gazebo-1] 	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:584:in `execute'
+[gazebo-1] 	from /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz:316:in `<main>'
+[ERROR] [gazebo-1]: process has died [pid 22990, exit code -2, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim -r /home/raghav/workshop_ws/install/Robotic_Arm/share/Robotic_Arm/worlds/robotic_arm_world.sdf --force-version 8'].
