@@ -407,7 +407,7 @@
     <plugin
       filename="libgz_ros2_control-system.so"
       name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-      <parameters>/home/raghav/workshop_ws/src/robotic_arm/config/ros2_controllers.yaml</parameters>
+      <parameters>$(find robotic_arm)/config/ros2_controllers.yaml</parameters>
       <robot_param>robot_description</robot_param>
       <robot_param_node>robot_state_publisher</robot_param_node>
     </plugin>
