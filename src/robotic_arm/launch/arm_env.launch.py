@@ -28,7 +28,6 @@ from ament_index_python.packages import get_package_prefix
 def generate_launch_description():
 
     package_share = FindPackageShare('robotic_arm')
-    agv_package_share = FindPackageShare('agv')
 
     default_world = PathJoinSubstitution(
         [package_share, 'worlds', 'robotic_arm_world.sdf']
@@ -282,10 +281,6 @@ def generate_launch_description():
         SetEnvironmentVariable(
             'GZ_SIM_RESOURCE_PATH',
             [
-                PathJoinSubstitution([agv_package_share, '..']),
-                os.pathsep,
-                PathJoinSubstitution([agv_package_share]),
-                os.pathsep,
                 PathJoinSubstitution([package_share, '..']),
                 os.pathsep,
                 PathJoinSubstitution([package_share]),
